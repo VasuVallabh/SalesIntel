@@ -1,0 +1,40 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: initial;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+}
+
+.card, .card .card-header {
+  border: none;
+  border-radius: 0;
+}
+
+.card .card-body {
+  padding: 16px;
+}
+
+.bg-very-light {
+  background: #f0f7ff;
+}
+
+.border {
+  border: 1px solid #dee2e6!important;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+.display-5 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.2;
+}
