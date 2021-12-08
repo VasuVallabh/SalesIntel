@@ -1,0 +1,32 @@
+.main-nav {
+  margin: 0;
+  padding: 0 16px;
+  background: linear-gradient(
+      180deg,#f0f7ff,#fff);
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  background: none;
+  border-bottom-color: #647bed;
+  color: #647bed;
+}
+
+.nav-tabs .nav-link {
+  margin-bottom: 0;
+  margin-right: 32px;
+  padding: 4px 2px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 4px solid #0000;
+  color: #3c455d;
+}
+
+fa-icon{
+  margin-right: 0.25rem;
+}

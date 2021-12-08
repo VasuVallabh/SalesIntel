@@ -1,0 +1,17 @@
+.footer{
+  display: block;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 80px;
+  margin: auto 0 0 0;
+  padding: 24px;
+  background: linear-gradient(
+      0deg,#f0f7ff,#f0f7ff 50%,#fff);
+  color: #848fae;
+}
+
+a{
+  text-decoration: none;
+  color: #647bed;
+}
+
