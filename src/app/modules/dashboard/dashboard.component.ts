@@ -23,6 +23,9 @@ export class DashboardComponent implements OnInit {
     this.blogLinksTitle.push('VISITORINTEL');
     this.blogLinksTitle.push('NEWS AND ALERTS');
     this.blogLinksTitle.push('RECOMMENDATIONS');
+    this.blogLinksTitle.push('RECENT COMPANIES');
+    this.blogLinksTitle.push('RECENT CONTACTS');
+    this.blogLinksTitle.push('RECENT SEARCHES');
 
   }
 

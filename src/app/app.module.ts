@@ -13,7 +13,7 @@ import {MainNavModule} from "./layout/main-nav/main-nav.module";
     BrowserModule,
     AppRoutingModule,
     LayoutModule,
-    MainNavModule
+    MainNavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
