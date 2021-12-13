@@ -1,0 +1,102 @@
+<table class="table pt-4">
+
+  <thead>
+  <tr>
+
+    <th class="checkbox-column">
+      <input type="checkbox" />
+    </th>
+
+    <th style="width: 300px;">
+      Company
+    </th>
+
+    <th class="text-center" style="width: 100px">
+      Fit Score
+      <span>
+        <fa-icon [icon]="faCaretDown"></fa-icon>
+      </span>
+    </th>
+
+    <th style="width: 300px">
+      Industry
+    </th>
+
+    <th class="numeric" style="width: 120px">
+      Revenue
+    </th>
+
+    <th class="numeric" style="width: 120px;">
+      Size
+    </th>
+
+    <th class="numeric" style="width: 200px">
+      Location
+    </th>
+
+    <th class="numeric" style="width: 120px">
+      Verified
+    </th>
+
+    <th class="numeric" style="width: 120px">
+      Machine
+    </th>
+
+  </tr>
+  </thead>
+
+  <tbody>
+
+    <tr *ngFor="let item of data">
+
+      <td>
+        <input type="checkbox" />
+      </td>
+
+      <td>
+        <button class="btn-link"> Lam Research </button>
+        <div>
+          <br/>
+        </div>
+      </td>
+
+      <td class="text-center">
+        <div class="d-flex flex-column align-items-center">
+          <div class="t-4">99</div>
+          <div class="progress progress-sm" style="width: 50px">
+            <div class="progress-bar" style="width: 99%; background: rgb(41, 163, 61);" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </td>
+
+      <td style="width: 200px">
+        Machinery Manufacturing
+      </td>
+
+      <td class="numeric">
+        9.65B
+      </td>
+
+      <td class="numeric">
+        10.700
+      </td>
+
+      <td>
+        Fremont, CA
+      </td>
+
+      <td class="numeric">
+        <a href="javascript:void(0)">
+          1,234
+        </a>
+      </td>
+
+      <td class="numeric">
+        <a href="javascript:void(0)">
+          23,456
+        </a>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
