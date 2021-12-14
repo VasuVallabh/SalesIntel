@@ -1,5 +1,4 @@
 <table class="table pt-4">
-
   <thead>
   <tr>
 
@@ -44,56 +43,54 @@
 
   </tr>
   </thead>
-
   <tbody>
 
-    <tr *ngFor="let item of data">
+    <tr *ngFor="let item of mData">
 
       <td>
         <input type="checkbox" />
       </td>
 
       <td>
-        <button class="btn-link"> Lam Research </button>
+        <button class="btn-link" (click)="openDetails(item.id)" > {{item.company}} </button>
         <div>
           <br/>
         </div>
       </td>
-
       <td class="text-center">
         <div class="d-flex flex-column align-items-center">
-          <div class="t-4">99</div>
+          <div class="t-4">{{item.fit_score}}</div>
           <div class="progress progress-sm" style="width: 50px">
-            <div class="progress-bar" style="width: 99%; background: rgb(41, 163, 61);" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar" [ngStyle]= "getClassof(item.fit_score)" ></div>
           </div>
         </div>
       </td>
 
       <td style="width: 200px">
-        Machinery Manufacturing
+        {{item.industry}}
       </td>
 
       <td class="numeric">
-        9.65B
+        {{item.revenue}}
       </td>
 
       <td class="numeric">
-        10.700
+        {{item.size}}
       </td>
 
       <td>
-        Fremont, CA
+        {{item.location}}
       </td>
 
       <td class="numeric">
         <a href="javascript:void(0)">
-          1,234
+          {{item.verified}}
         </a>
       </td>
 
       <td class="numeric">
         <a href="javascript:void(0)">
-          23,456
+          {{item.machine}}
         </a>
       </td>
 
