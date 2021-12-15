@@ -1,0 +1,67 @@
+<table class="table">
+  <thead>
+
+    <tr>
+      <th class="checkbox-column">
+        <input type="checkbox" />
+      </th>
+
+      <th>
+        Name
+        <span>
+          <fa-icon [icon]="faCaretDown"></fa-icon>
+        </span>
+      </th>
+
+      <th>
+        Job Title
+      </th>
+
+      <th>
+        Level
+      </th>
+
+      <th>
+        Department
+      </th>
+
+      <th>
+        Company
+      </th>
+
+      <th>
+        Location
+      </th>
+    </tr>
+
+  </thead>
+
+  <tbody>
+
+  <tr *ngFor="let item of mData">
+
+    <td>
+      <input type="checkbox" />
+    </td>
+
+    <td>
+      <button class="btn-link" (click)="openDetails(item.id)">{{item.name}}</button>
+      <div>
+        <br/>
+      </div>
+    </td>
+
+    <td style="max-width: 500px;">{{item.job_title}}</td>
+
+    <td >{{item.level}}</td>
+
+    <td>{{item.department}}</td>
+
+    <td>{{item.company}}</td>
+
+    <td>{{item.location}}</td>
+
+  </tr>
+  </tbody>
+
+</table>

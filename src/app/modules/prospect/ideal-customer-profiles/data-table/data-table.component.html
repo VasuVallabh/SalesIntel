@@ -1,0 +1,67 @@
+<table class="table">
+  <thead>
+
+    <tr>
+      <th class="checkbox-column">
+        <input type="checkbox" />
+      </th>
+
+      <th>
+        Name
+      </th>
+
+      <th>
+
+      </th>
+
+      <th>
+        Scored
+      </th>
+
+      <th>
+        Owner
+      </th>
+
+      <th>
+        LastUpdated
+        <span>
+          <fa-icon [icon]="faCaretDown"></fa-icon>
+        </span>
+      </th>
+
+    </tr>
+
+  </thead>
+
+  <tbody>
+
+  <tr *ngFor="let item of mData">
+
+    <td>
+      <input type="checkbox" />
+    </td>
+
+    <td>
+      <button class="btn-link" (click)="openDetails(item.id)">{{item.name}}</button>
+      <div>
+        <br/>
+      </div>
+    </td>
+
+    <td>
+      <div class="dropdown">
+        <button id="scoreButton" class="dropdown-toggle btn-link">
+          Score
+        </button>
+      </div>
+    </td>
+
+    <td >{{item.scored}}</td>
+
+    <td>{{item.owner}}</td>
+
+    <td>{{item.last_updated}}</td>
+  </tr>
+  </tbody>
+
+</table>

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "SalesIntel Fit Score",
+    "scored": "12345",
+    "owner": "John Smith",
+    "last_updated": "7/22/2021 3:16pm"
+  },
+  {
+    "id": 2,
+    "name": "Best of Energy Sector",
+    "scored": "489",
+    "owner": "Emily Lee",
+    "last_updated": "7/16/2021 4:25pm"
+  },
+  {
+    "id": 3,
+    "name": "Top 500 Banks",
+    "scored": "503",
+    "owner": "Sarah Jones",
+    "last_updated": "7/15/2021 11:06am"
+  }
+]
