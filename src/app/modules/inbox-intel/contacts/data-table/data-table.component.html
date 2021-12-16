@@ -1,0 +1,98 @@
+<table class="table pt-4">
+  <thead>
+  <tr>
+
+    <th class="checkbox-column">
+      <input type="checkbox" />
+    </th>
+
+    <th>
+
+    </th>
+
+    <th>
+      Name
+    </th>
+
+    <th>
+      Email
+    </th>
+
+    <th style="width: 300px;">
+      Job Title
+    </th>
+
+    <th>
+      Level
+    </th>
+
+    <th>
+      Company
+    </th>
+
+    <th>
+      Location
+    </th>
+
+    <th>
+      Last Communication
+      <span>
+        <fa-icon [icon]="faCaretDown"></fa-icon>
+      </span>
+    </th>
+
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of mData">
+      <td>
+        <input type="checkbox" />
+      </td>
+
+      <td class="icon-column">
+        <div>
+          <fa-icon *ngIf="item.icon === 'fa-user-check'"
+                   [icon]="faUserCheck"
+                   style="color: green;"
+          ></fa-icon>
+          <fa-icon *ngIf="item.icon === 'fa-desktop'"
+                   [icon]="faDesktop"
+                   style="color: grey;"
+          ></fa-icon>
+        </div>
+      </td>
+
+      <td >
+        <a>{{item.name}}</a>
+        <div class="subdued t-2">
+          <fa-icon [icon]="faEnvelope" class="me-2"></fa-icon>
+          <fa-icon [icon]="faPhone" ></fa-icon>
+        </div>
+      </td>
+
+      <td >
+        {{item.email}}
+      </td>
+
+      <td >
+        {{item.job_title}}
+      </td>
+
+      <td>
+        {{item.level}}
+      </td>
+
+      <td>
+        {{item.company}}
+      </td>
+
+      <td>
+        {{item.location}}
+      </td>
+
+      <td>
+        {{item.last_communication}}
+      </td>
+    </tr>
+  </tbody>
+</table>

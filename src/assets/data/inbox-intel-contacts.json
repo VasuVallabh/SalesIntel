@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "icon": "fa-user-check",
+    "name": "Katie Barthelmas",
+    "email": "katie.barthelmas@cardinalhealth.com",
+    "job_title": "Manager, Senior Marketing",
+    "level": "Manager",
+    "company": "Cardinal Health",
+    "location": "Dublin, OH",
+    "last_communication": "9/23/2021"
+  },
+  {
+    "id": 2,
+    "icon": "",
+    "name": "Teah Abshire",
+    "email": "teah.abshire@amazon.com",
+    "job_title": "",
+    "level": "",
+    "company": "",
+    "location": "",
+    "last_communication": "9/23/2021"
+  },
+  {
+    "id": 3,
+    "icon": "",
+    "name": "",
+    "email": "jennifer.ackerman01@paycom.com",
+    "job_title": "",
+    "level": "",
+    "company": "",
+    "location": "",
+    "last_communication": "9/23/2021"
+  },
+  {
+    "id": 4,
+    "icon": "fa-desktop",
+    "name": "Heather Brown",
+    "email": "heather.brown@cigna.com",
+    "job_title": "Manager, Associate Category",
+    "level": "Manager",
+    "company": "Cigna",
+    "location": "Shakopee, MN",
+    "last_communication": "9/23/2021"
+  },
+  {
+    "id": 5,
+    "icon": "",
+    "name": "",
+    "email": "joe.bowman@cardinalhealth.com",
+    "job_title": "",
+    "level": "",
+    "company": "",
+    "location": "",
+    "last_communication": "9/23/2021"
+  },
+  {
+    "id": 6,
+    "icon": "",
+    "name": "Lauri Caruso",
+    "email": "lcau@novonordisk.com",
+    "job_title": "",
+    "level": "",
+    "company": "",
+    "location": "",
+    "last_communication": "9/23/2021"
+  },
+  {
+    "id": 7,
+    "icon": "fa-user-check",
+    "name": "Michael Brumm",
+    "email": "michael.brumm@marsh.com",
+    "job_title": "Manager, Global Sourcing, National Brands",
+    "level": "Manager",
+    "company": "Marsh",
+    "location": "Norwalk, CT",
+    "last_communication": "9/23/2021"
+  },
+  {
+    "id": 8,
+    "icon": "",
+    "name": "Lianne Cartt",
+    "email": "lianne.cartt@cardinalhealth.com",
+    "job_title": "",
+    "level": "",
+    "company": "",
+    "location": "",
+    "last_communication": "9/23/2021"
+  }
+]

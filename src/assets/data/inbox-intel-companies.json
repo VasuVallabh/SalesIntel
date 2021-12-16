@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "icon": "fa-desktop",
+    "company": "Lam Research",
+    "fit_score": 99,
+    "industry": "Machinery Manufacturing",
+    "revenue": "9.65B",
+    "size": "10,700",
+    "location": "Fremont, CA",
+    "verified": "1,234",
+    "machine": "23,456"
+  },
+  {
+    "id": 2,
+    "icon": "fa-desktop",
+    "company": "Century Communities, Inc.",
+    "fit_score": 97,
+    "industry": "Real Estate and Rental & Leasing",
+    "revenue": "2.54B",
+    "size": "1,403",
+    "location": "Greenwood Village, CO",
+    "verified": "1,234",
+    "machine": "23,456"
+  },
+  {
+    "id": 3,
+    "icon": "",
+    "company": "TTM Technologies",
+    "fit_score": 97,
+    "industry": "Electrical Equipment, Appliance",
+    "revenue": "2.00B",
+    "size": "3,576",
+    "location": "Santa Ana, CA",
+    "verified": "1,234",
+    "machine": "23,456"
+  },
+  {
+    "id": 4,
+    "icon": "fa-user-check",
+    "company": "BGC Partners",
+    "fit_score": 92,
+    "industry": "Finance and Insurance",
+    "revenue": "2.10B",
+    "size": "4,950",
+    "location": "New York, NY",
+    "verified": "1,234",
+    "machine": "23,456"
+  },
+  {
+    "id": 5,
+    "icon": "fa-desktop",
+    "company": "TSYS",
+    "fit_score": 90,
+    "industry": "Activities Related to Credit Intermediation",
+    "revenue": "4.03B",
+    "size": "9,539",
+    "location": "Columbus, GA",
+    "verified": "1,234",
+    "machine": "23,456"
+  },
+  {
+    "id": 6,
+    "icon": "",
+    "company": "Essent Guaranty, Inc.",
+    "fit_score": 88,
+    "industry": "Insurance Carriers",
+    "revenue": "30.10M",
+    "size": "385",
+    "location": "Wayne, PA",
+    "verified": "1,234",
+    "machine": "23,456"
+  },
+  {
+    "id": 7,
+    "icon": "fa-desktop",
+    "company": "Amazon",
+    "fit_score": 85,
+    "industry": "Information Technology",
+    "revenue": "280.52B",
+    "size": "1,298,000",
+    "location": "Seattle, WA",
+    "verified": "1,234",
+    "machine": "23,456"
+  },
+  {
+    "id": 8,
+    "icon": "fa-user-check",
+    "company": "Tyler Technologies",
+    "fit_score": 88,
+    "industry": "Computer Systems Design and Related Services",
+    "revenue": "839.36M",
+    "size": "5,253",
+    "location": "Plano, TX",
+    "verified": "1,234",
+    "machine": "23,456"
+  }
+]
