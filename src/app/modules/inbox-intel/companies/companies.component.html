@@ -1,1 +1,18 @@
-<p>companies works!</p>
+<div class="d-flex pb-2">
+  <div class="dropdown">
+    <a class="dropdown-toggle btn btn-primary" aria-expanded="false">
+      <fa-icon [icon]="faShare" class="me-1"></fa-icon>
+      Export &nbsp;
+    </a>
+  </div>
+  <div>
+    <button class="btn btn-outline-primary">
+      <fa-icon [icon]="faPlus" class="me-1"></fa-icon>
+      Add to List
+    </button>
+  </div>
+  <div class="ms-auto">
+    <a href="javascript:void(0)">what is InboxIntel</a>
+  </div>
+</div>
+<app-data-table></app-data-table>

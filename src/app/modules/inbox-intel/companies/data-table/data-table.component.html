@@ -1,0 +1,92 @@
+<table class="table pt-4">
+  <thead>
+  <tr>
+
+    <th class="checkbox-column">
+      <input type="checkbox" />
+    </th>
+
+    <th>
+
+    </th>
+
+    <th>
+      Company
+    </th>
+
+    <th>
+      Industry
+    </th>
+
+    <th>
+      Location
+    </th>
+
+    <th>
+      Revenue
+    </th>
+
+    <th>
+      Size
+    </th>
+
+    <th>
+      Verified
+    </th>
+
+    <th>
+      Machine
+    </th>
+
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of mData">
+
+      <td>
+        <input type="checkbox" />
+      </td>
+
+      <td class="icon-column">
+        <div>
+          <fa-icon *ngIf="item.icon === 'fa-user-check'"
+                   [icon]="faUserCheck"
+                   style="color: green;"
+          ></fa-icon>
+          <fa-icon *ngIf="item.icon === 'fa-desktop'"
+                   [icon]="faDesktop"
+                   style="color: grey;"
+          ></fa-icon>
+        </div>
+      </td>
+
+      <td >
+        <a>{{item.company}}</a>
+      </td>
+
+      <td >
+        {{item.industry}}
+      </td>
+
+      <td >
+        {{item.location}}
+      </td>
+
+      <td>
+        {{item.revenue}}
+      </td>
+
+      <td>
+        {{item.size}}
+      </td>
+
+      <td>
+        <a>{{item.verified}}</a>
+      </td>
+
+      <td>
+        <a>{{item.machine}}</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
