@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {BounceIntelComponent} from "./bounce-intel.component";
 
 const routes: Routes = [
-  {
-    path:'',
-    component:BounceIntelComponent
-  }
+      {
+        path: '',
+        loadChildren: () => import('./tasks/tasks.module').then(m => m.TasksModule)
+      },
+      {
+        path: 'new',
+        loadChildren: () => import('./new/new.module').then(m => m.NewModule)
+      },
+      {
+        path: '**',
+        redirectTo: 'tasks'
+      }
 ];
 
 @NgModule({

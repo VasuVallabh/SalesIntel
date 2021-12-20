@@ -7,7 +7,8 @@ const routes: Routes = [
   { path: 'prospect', loadChildren: () => import('./modules/prospect/prospect.module').then(m => m.ProspectModule) },
   { path: 'rod', loadChildren: () => import('./modules/rod/rod.module').then(m => m.RodModule) },
   { path: 'inbox-intel', loadChildren: () => import('./modules/inbox-intel/inbox-intel.module').then(m => m.InboxIntelModule) },
-  { path: 'bounce-intel', loadChildren: () => import('./modules/bounce-intel/bounce-intel.module').then(m => m.BounceIntelModule) },
+  { path: 'bounce-intel/tasks', loadChildren: () => import('./modules/bounce-intel/tasks/tasks.module').then(m => m.TasksModule) },
+  { path: 'bounce-intel/new', loadChildren: () => import('./modules/bounce-intel/new/new.module').then(m => m.NewModule) },
   { path: 'market-analysis', loadChildren: () => import('./modules/market-analysis/market-analysis.module').then(m => m.MarketAnalysisModule) },
   { path: 'intelligence', loadChildren: () => import('./modules/Intelligence/Intelligence.module').then(m => m.IntelligenceModule) },
   { path: '**', redirectTo: 'prospect' }
