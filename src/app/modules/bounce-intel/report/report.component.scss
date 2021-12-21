@@ -1,0 +1,97 @@
+.dashchart {
+  width: 100%;
+  height: 400px;
+}
+
+h3{
+  font-size: 24px;
+}
+
+.btn, button.btn {
+  height: 32px;
+  border-radius: 100px;
+  margin-right: 8px;
+  padding: 6px 16px;
+  padding-right: 16px;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1em;
+}
+
+.btn.btn-primary, button.btn.btn-primary {
+  background-color: #647bed;
+  border-color: #647bed;
+  color: #fff;
+}
+
+.btn.btn-icon, button.btn.btn-icon {
+  width: 32px;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.t-6 {
+  font-size: 24px;
+}
+
+.t-4 {
+  font-size: 16px;
+}
+
+.pt-3, .py-3 {
+  padding-top: 1rem !important;
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+.btn-link:hover {
+  color: #0056b3;
+}
+
+.btn-link.focus, .btn-link:focus, .btn-link:hover {
+  text-decoration: underline;
+}
+
+.btn-link {
+  font-weight: 400;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.btn-link {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #647bed;
+}
+
+[type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+}
+
+.btn.btn-outline-primary, button.btn.btn-outline-primary {
+  background-color: #f0f7ff;
+  border-color: #cce6ff;
+  color: #647bed;
+}
+
+.btn.btn-outline-primary:hover, button.btn.btn-outline-primary:hover {
+  color: #fff;
+}
+.btn.btn-outline-primary:hover, button.btn.btn-outline-primary:hover {
+  background-color: #0daeba;
+  border-color: #0daeba;
+  color: #fff;
+}
+.btn:hover {
+  color: #212529;
+  text-decoration: none;
+}

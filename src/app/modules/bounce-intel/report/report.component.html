@@ -1,0 +1,122 @@
+<div class="px-3">
+  <div class="pb-2">
+    <button class="btn-link">
+      <fa-icon [icon]="faArrowLeft" class="me-2"></fa-icon>
+      Back to BounceIntel Tasks
+    </button>
+  </div>
+  <div>
+    <h3>Financial Sector Contacts</h3>
+  </div>
+  <div class="pb-3">
+    <div class="border-bottom">
+      <div class="d-flex pb-2">
+        <div class="font-weight-bold" style="width: 140px">File Name:</div>
+        <div>financial-sector-contacts.csv</div>
+      </div>
+      <div class="d-flex pb-2">
+        <div class="font-weight-bold" style="width: 140px">Rows:</div>
+        <div>12,345</div>
+      </div>
+    </div>
+  </div>
+  <div class="pt-3">
+    <div class="d-flex">
+      <div class="pe-4">
+        <div>
+          <chart class="dashchart" [type]="type" [data]="data"
+                 [options]="options"></chart>
+        </div>
+      </div>
+      <div class="flex-grow-1">
+        <table class="table m-0">
+          <thead>
+            <tr>
+              <th>
+                <div class="d-flex justify-content-center">
+                  <div style="width: 24px; height: 24px; border-radius: 0px; background: #65c761;"></div>
+                  <div class="px-3">Valid</div>
+                  <fa-icon [icon]="faInfoCircle"></fa-icon>
+                </div>
+              </th>
+              <th>
+                <div class="d-flex justify-content-center">
+                  <div style="width: 24px; height: 24px; border-radius: 0px; background: #aaaabb;"></div>
+                  <div class="px-3">Invalid</div>
+                  <fa-icon [icon]="faInfoCircle"></fa-icon>
+                </div>
+              </th>
+              <th>
+                <div class="d-flex justify-content-center">
+                  <div style="width: 24px; height: 24px; border-radius: 0px; background: #7d8fe8;"></div>
+                  <div class="px-3">Duplicates</div>
+                  <fa-icon [icon]="faInfoCircle"></fa-icon>
+                </div>
+              </th>
+              <th>
+                <div class="d-flex justify-content-center">
+                  <div style="width: 24px; height: 24px; border-radius: 0px; background: #ff9933;"></div>
+                  <div class="px-3">Bad Syntax</div>
+                  <fa-icon [icon]="faInfoCircle"></fa-icon>
+                </div>
+              </th>
+              <th class="text-center">Total Uploaded</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">
+                <div class="t-6">6,420</div>
+                <div class="t-4">52%</div>
+                <div class="pt-3">
+                  <button class="btn btn-icon btn-primary">
+                    <fa-icon [icon]="faDownload"></fa-icon>
+                  </button>
+                </div>
+              </td>
+              <td class="text-center">
+                <div class="t-6">2,095</div>
+                <div class="t-4">25%</div>
+                <div class="pt-3">
+                  <button class="btn btn-icon btn-outline-primary me-2">
+                    <fa-icon [icon]="faDownload"></fa-icon>
+                  </button>
+                  <button class="btn btn-icon btn-outline-primary me-2">
+                    <fa-icon [icon]="faHeadphones"></fa-icon>
+                  </button>
+                </div>
+              </td>
+              <td class="text-center">
+                <div class="t-6">6,420</div>
+                <div class="t-4">52%</div>
+                <div class="pt-3">
+                  <button class="btn btn-icon btn-outline-primary me-2">
+                    <fa-icon [icon]="faDownload"></fa-icon>
+                  </button>
+                </div>
+              </td>
+              <td class="text-center">
+                <div class="t-6">728</div>
+                <div class="t-4">17%</div>
+                <div class="pt-3">
+                  <button class="btn btn-icon btn-outline-primary me-2">
+                    <fa-icon [icon]="faDownload"></fa-icon>
+                  </button>
+                </div>
+              </td>
+              <td class="text-center">
+                <div class="t-6">12,345</div>
+                <div class="t-4">100%</div>
+                <div class="pt-3">
+                  <button class="btn btn-icon btn-outline-primary me-2">
+                    <fa-icon [icon]="faDownload"></fa-icon>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

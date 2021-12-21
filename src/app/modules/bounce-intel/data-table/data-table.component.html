@@ -28,7 +28,7 @@
     <tr *ngFor="let item of mData">
 
       <td >
-        <a>{{item.task_name}}</a>
+        <a (click)="navigateToReport()" >{{item.task_name}}</a>
       </td>
 
       <td >

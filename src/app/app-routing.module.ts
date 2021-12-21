@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'inbox-intel', loadChildren: () => import('./modules/inbox-intel/inbox-intel.module').then(m => m.InboxIntelModule) },
   { path: 'bounce-intel/tasks', loadChildren: () => import('./modules/bounce-intel/tasks/tasks.module').then(m => m.TasksModule) },
   { path: 'bounce-intel/new', loadChildren: () => import('./modules/bounce-intel/new/new.module').then(m => m.NewModule) },
+  { path: 'bounce-intel/report', loadChildren: () => import('./modules/bounce-intel/report/report.module').then(m => m.ReportModule) },
   { path: 'market-analysis', loadChildren: () => import('./modules/market-analysis/market-analysis.module').then(m => m.MarketAnalysisModule) },
   { path: 'intelligence', loadChildren: () => import('./modules/Intelligence/Intelligence.module').then(m => m.IntelligenceModule) },
   { path: '**', redirectTo: 'prospect' }

@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {IBounceIntel} from "../../../models/IBounceIntel";
 import {BounceIntelService} from "../services/bounce-intel.service";
 import { faDownload, faTrash } from '@fortawesome/free-solid-svg-icons';
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-data-table',
@@ -14,7 +15,9 @@ export class DataTableComponent implements OnInit {
   faTrash = faTrash
   mData: IBounceIntel[] = [];
 
-  constructor(private bounceIntelService: BounceIntelService) {}
+  constructor(private bounceIntelService: BounceIntelService,
+              private router: Router, private activatedRoute: ActivatedRoute
+              ) {}
 
   ngOnInit(): void {
     this.bounceIntelService
@@ -24,4 +27,7 @@ export class DataTableComponent implements OnInit {
       });
   }
 
+  navigateToReport() {
+    this.router.navigate(['/bounce-intel/report'],{relativeTo: this.activatedRoute});
+  }
 }
