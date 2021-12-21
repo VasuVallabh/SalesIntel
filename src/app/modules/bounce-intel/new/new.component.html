@@ -1,0 +1,144 @@
+<div class="px-2">
+  <div>
+    <br/>
+    <div class="pb-4">
+      <ul class="nav nav-tabs">
+        <li class="nav-item" (click)="goToUpload()">
+          <a class="nav-link d-flex" [ngClass]="activateUpload()" href="javascript:void(0)">
+            <div class="step-number me-3">1</div>
+            <div>
+              <div class="m-0 font-weight-bold text-uppercase">Upload</div>
+              <div>CSV file with email addresses</div>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex" [ngClass]="activateProcessing()" href="javascript:void(0)">
+            <div class="step-number me-3">
+              2
+            </div>
+            <div>
+              <div class="m-0 font-weight-bold text-uppercase">Processing</div>
+              <div>Perform verification of emails</div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div *ngIf="isUpload">
+        <div class="form-group">
+          <div class="row">
+            <div class="col-4">
+              <div>
+                <label>Task Name</label>
+              </div>
+              <div>
+                <input class="form-control" type="text" value="Emails from Webinars 2020-21"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <ul>
+            <li>
+              Upload a CSV file from your computer.
+            </li>
+            <li>
+              The file must contain a single column of email addresses.
+            </li>
+            <li>
+              Max 500,000 email addresses per list.
+            </li>
+          </ul>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-3">
+              <div>
+                <label>CSV File *</label>
+              </div>
+              <div>
+                <input class="form-control-file" type="file"/>
+              </div>
+            </div>
+            <div class="col-3">
+              <label></label>
+              <div>
+                <button class="btn-link">Download template</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-6">
+                  <div class="pt-3">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"/>
+                        Skip first row (select if the first row has headers)
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div *ngIf="!isUpload">
+        <br/>
+        <div class="row">
+          <div class="col-6">
+            <div>
+              <div class="d-flex pb-2">
+                <div class="font-weight-bold" style="width: 140px">Task Name:</div>
+                <div>Emails from Webinars 2020-21</div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex pb-2">
+                <div class="font-weight-bold" style="width: 140px">File Name:</div>
+                <div>webinar-visitors-04.csv</div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex pb-2">
+                <div class="font-weight-bold" style="width: 140px">Rows:</div>
+                <div>336</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br/>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="row">
+        <div class="col-6">
+          <div class="d-flex">
+            <div *ngIf="isUpload">
+              <button class="btn btn-outline-primary" tabindex="0" (click)="navigateToTasks()">
+                <fa-icon [icon]="faTimes" class="me-2"></fa-icon>
+                Cancel
+              </button>
+              <button class="btn btn-primary" tabindex="0" (click)="goToProcessing()">
+                <fa-icon [icon]="faArrowRight" class="me-2"></fa-icon>
+                Next
+              </button>
+            </div>
+            <div *ngIf="!isUpload">
+              <button class="btn btn-outline-primary" tabindex="0" (click)="goToUpload()">
+                <fa-icon [icon]="faArrowLeft" class="me-2"></fa-icon>
+                Previous
+              </button>
+              <button class="btn btn-primary" tabindex="0" (click)="startProcessing()">
+                <fa-icon [icon]="faArrowRight" class="me-2"></fa-icon>
+                Start Processing
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
