@@ -11,7 +11,7 @@ export class IcpService {
 
   constructor(private http: HttpClient) { }
 
-  getIcp(): Observable<IICPs[]>{
+  getIcps(): Observable<IICPs[]>{
     return this.http.get<any>('../../../../../assets/data/icps.json')
       .pipe(
         map((data: IICPs[]) => data),

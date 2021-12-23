@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faArrowLeft, faInfoCircle, faDownload, faHeadphones } from '@fortawesome/free-solid-svg-icons';
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-report',
@@ -31,9 +32,12 @@ export class ReportComponent implements OnInit {
     maintainAspectRatio: false,
   }
 
-  constructor() { }
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
   }
 
+  navigateToBounceIntelTasks() {
+    this.router.navigate(['/bounce-intel/tasks'],{relativeTo: this.activatedRoute});
+  }
 }

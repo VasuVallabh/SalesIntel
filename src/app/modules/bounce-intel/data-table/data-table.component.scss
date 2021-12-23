@@ -10,10 +10,6 @@ a{
   color: #647bed !important;
 }
 
-a:hover{
-  color: #0daeba !important;
-}
-
 a{
   text-decoration: none;
   background-color: initial;
@@ -92,5 +88,11 @@ a {
   border: none;
   background: none;
   color: #647bed;
+}
+
+a:hover {
+  color: #0daeba !important;
+  text-decoration: underline !important;
+  cursor: pointer
 }
 

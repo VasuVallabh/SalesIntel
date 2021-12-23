@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DataTableComponent } from './data-table.component';
+import { IcpsListComponent } from './icps-list.component';
 
-describe('DataTableComponent', () => {
-  let component: DataTableComponent;
-  let fixture: ComponentFixture<DataTableComponent>;
+describe('IcpsListComponent', () => {
+  let component: IcpsListComponent;
+  let fixture: ComponentFixture<IcpsListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DataTableComponent ]
+      declarations: [ IcpsListComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DataTableComponent);
+    fixture = TestBed.createComponent(IcpsListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

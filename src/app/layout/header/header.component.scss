@@ -2,3 +2,62 @@
   background-color: #f0f7ff;
   padding: 8px 16px;
 }
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  margin-bottom: 0px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button, input {
+  overflow: visible;
+}
+
+body, input, select, table, td, textarea, th {
+  font-family: Source Sans Pro,sans-serif;
+  color: #3c455d;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-top-color: rgb(206, 212, 218);
+  border-right-color: rgb(206, 212, 218);
+  border-bottom-color: rgb(206, 212, 218);
+  border-left-color: rgb(206, 212, 218);
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+input.form-control, input:not([type="checkbox"], [type="radio"], [type="file"]), select, select.form-control {
+  height: 32px;
+  padding: 2px 8px;
+  border-color: #848fae;
+}
+
+
+element {
+
+  min-width: 400px;
+
+}
+.input-group > .custom-file, .input-group > .custom-select, .input-group > .form-control, .input-group > .form-control-plaintext {
+
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+  margin-bottom: 0;
+
+}

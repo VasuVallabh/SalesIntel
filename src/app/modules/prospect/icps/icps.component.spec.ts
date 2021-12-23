@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IdealCustomerProfilesComponent } from './ideal-customer-profiles.component';
+import { IcpsComponent } from './icps.component';
 
 describe('IdealCustomerProfilesComponent', () => {
-  let component: IdealCustomerProfilesComponent;
-  let fixture: ComponentFixture<IdealCustomerProfilesComponent>;
+  let component: IcpsComponent;
+  let fixture: ComponentFixture<IcpsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ IdealCustomerProfilesComponent ]
+      declarations: [ IcpsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(IdealCustomerProfilesComponent);
+    fixture = TestBed.createComponent(IcpsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

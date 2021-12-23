@@ -1,0 +1,212 @@
+<div class="form-group">
+  <div class="d-flex">
+    <div style="width: 340px">
+      <div>
+        <label>  </label>
+      </div>
+      <div class="nav nav-pills">
+        <div class="nav-item">
+          <button class="nav-link active">Companies</button>
+        </div>
+        <div class="nav-item">
+          <button class="nav-link">Contacts</button>
+        </div>
+      </div>
+    </div>
+    <div style="width: 600px">
+      <div>
+        <label>Name</label>
+      </div>
+      <input class="form-control" type="text"/>
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <div class="row">
+    <div class="col-8">
+      <table class="table table-sm">
+        <thead>
+          <tr>
+            <th style="width: 340px;"></th>
+            <th style="width: 300px;">Criteria</th>
+            <th style="width: 300px;">
+              How important is it?
+              <button class="btn btn-icon btn-sm"
+                      tooltip="Assign a weight of 1 to 5
+                      to each criterion based on how important
+                      that criterion is to you. The score of this ICP
+                      will be calculated based on these weights.">
+                <fa-icon [icon]="faQuestionCircle"></fa-icon>
+              </button>
+            </th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="5">
+              <div class="t-5 pe-4">
+                I am looking for companies in these industries
+              </div>
+            </td>
+            <td>
+              <div>Finance and Insurance</div>
+            </td>
+            <td>
+              <icps-edit-grade></icps-edit-grade>
+            </td>
+            <td class="text-end">
+              <button class="btn btn-icon btn-sm">
+                <fa-icon [icon]="faTimes"></fa-icon>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="ps-3">- Banking</div>
+            </td>
+            <td>
+              <icps-edit-grade></icps-edit-grade>
+            </td>
+            <td class="text-end">
+              <button class="btn btn-icon btn-sm">
+                <fa-icon [icon]="faTimes"></fa-icon>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="ps-3">- Insurance Carriers</div>
+            </td>
+            <td>
+              <icps-edit-grade></icps-edit-grade>
+            </td>
+            <td class="text-end">
+              <button class="btn btn-icon btn-sm">
+                <fa-icon [icon]="faTimes"></fa-icon>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>Information Technology</div>
+            </td>
+            <td>
+              <icps-edit-grade></icps-edit-grade>
+            </td>
+            <td class="text-end">
+              <button class="btn btn-icon btn-sm">
+                <fa-icon [icon]="faTimes"></fa-icon>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <input class="form-control" type="text" placeholder="Select industries..."/>
+              </div>
+              <div>
+                <br/>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="2">
+              <div class="t-5 pe-4">
+                of employee size
+              </div>
+            </td>
+            <td>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Min</span>
+                </div>
+                <input class="form-control" type="text" placeholder="minimum employees" value="10">
+              </div>
+            </td>
+            <td>
+              <icps-edit-grade></icps-edit-grade>
+            </td>
+            <td class="text-end"></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Max</span>
+                </div>
+                <input class="form-control" type="text" placeholder="minimum employees" value="100">
+              </div>
+              <div>
+                <br/>
+              </div>
+            </td>
+            <td>
+              <icps-edit-grade></icps-edit-grade>
+            </td>
+            <td class="text-end"></td>
+          </tr>
+          <tr>
+            <td rowspan="2">
+              <div class="t-5 pe-4">
+                with an annual revenue of
+              </div>
+            </td>
+            <td>
+              <div class="input-group">
+                <span class="input-group-text">Min $</span>
+                <input type="text" class="form-control" value="1">
+                <span class="input-group-text">millions</span>
+              </div>
+            </td>
+            <td>
+              <icps-edit-grade></icps-edit-grade>
+            </td>
+            <td class="text-end"></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="input-group">
+                <span class="input-group-text">Max $</span>
+                <input type="text" class="form-control" value="100">
+                <span class="input-group-text">millions</span>
+              </div>
+              <div>
+                <br/>
+              </div>
+            </td>
+            <td>
+              <icps-edit-grade></icps-edit-grade>
+            </td>
+            <td class="text-end"></td>
+          </tr>
+          <tr>
+            <td rowspan="0"></td>
+            <td>
+              <div>
+                <button class="btn btn-outline-primary">
+                  <fa-icon [icon]="faPlus" class="me-2"></fa-icon>
+                  Add more filters...
+                </button>
+              </div>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="pb-3">
+  <button class="btn btn-primary">
+    <fa-icon [icon]="faSave" class="me-2"></fa-icon>
+    Save
+  </button>
+  <button class="btn btn-outline-primary">
+    <fa-icon [icon]="faTimes" class="me-2"></fa-icon>
+    Cancel
+  </button>
+  <br/>
+  <br/>
+</div>

@@ -24,8 +24,8 @@ const routes: Routes = [
         loadChildren: () => import('./saved-searches/saved-searches.module').then(m => m.SavedSearchesModule)
       },
       {
-        path: 'ideal-customer-profiles',
-        loadChildren: () => import('./ideal-customer-profiles/ideal-customer-profiles.module').then(m => m.IdealCustomerProfilesModule)
+        path: 'icps',
+        loadChildren: () => import('./icps/icps.module').then(m => m.IcpsModule)
       },
       {
         path: '',
