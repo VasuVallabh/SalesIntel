@@ -1,0 +1,31 @@
+button.btn.grade {
+  width: 24px;
+  height: 24px;
+  margin-right: 2px;
+  padding: 2px 4px;
+  border-radius: 5px;
+  border-color: #c1c7d7;
+  background: #f0f7ff;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.imp{
+  background: rgb(69, 161, 99) none repeat scroll 0% 0%;
+}
+
+button.btn.grade.selected {
+  border-color: #848fae;
+  background: #848fae;
+  color: #fff;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.grade-label {
+  font-size: 14px;
+  line-height: 24px;
+  white-space: nowrap;
+}
