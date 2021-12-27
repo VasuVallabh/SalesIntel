@@ -4,11 +4,13 @@ import { CompaniesComponent } from './companies.component';
 import { CompaniesRoutingModule } from './companies-routing.module';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { DataTableComponent } from './data-table/data-table.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
     CompaniesComponent,
-    DataTableComponent
+    DataTableComponent,
+    DetailsComponent
   ],
   imports: [
     CommonModule,

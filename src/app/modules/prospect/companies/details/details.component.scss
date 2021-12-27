@@ -1,0 +1,74 @@
+.card, .card .card-header {
+  border: none;
+  border-radius: 0;
+}
+
+.card .card-header {
+  background: none;
+  border-top: 3px solid #848fae;
+  padding: 6px 16px;
+  text-transform: uppercase;
+  color: #4f5a78;
+}
+
+.btn.btn-outline-primary:hover, button.btn.btn-outline-primary:hover {
+  background-color: #0daeba;
+  border-color: #0daeba;
+  color: #fff;
+}
+
+.btn, button.btn {
+  height: 32px;
+  border-radius: 100px;
+  margin-right: 8px;
+  padding: 6px 16px;
+  font-size: 16px;
+  line-height: 1em;
+}
+
+.btn.btn-outline-primary, button.btn.btn-outline-primary {
+  background-color: #f0f7ff;
+  border-color: #cce6ff;
+  color: #647bed;
+}
+
+.btn.btn-primary, button.btn.btn-primary {
+  background-color: #647bed;
+  border-color: #647bed;
+  color: #fff;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.dropdown, .dropleft, .dropright, .dropup {
+  position: relative;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #0daeba;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: initial;
+}
+
+a {
+  color: #647bed;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+}

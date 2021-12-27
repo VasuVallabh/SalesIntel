@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {faCaretDown} from '@fortawesome/free-solid-svg-icons';
 import {CompaniesService} from '../services/companies.service';
 import {ICompanies} from "../../../../models/ICompanies";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-data-table',
@@ -13,7 +14,10 @@ export class DataTableComponent implements OnInit {
   faCaretDown = faCaretDown;
   mData: ICompanies[] = [];
 
-  constructor(private companiesService: CompaniesService) {}
+  constructor(private companiesService: CompaniesService,
+              private route: ActivatedRoute,
+              private router: Router
+  ) {}
 
   ngOnInit(): void {
     this.companiesService
@@ -23,8 +27,9 @@ export class DataTableComponent implements OnInit {
       });
   }
 
-  openDetails(id: string) {
-    console.log(id);
+  navigateToDetails(name: string) {
+    console.log(name);
+    this.router.navigate(['details'], { relativeTo: this.route });
   }
 
   getClassof(fit_score: string) {
