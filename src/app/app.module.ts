@@ -5,6 +5,7 @@ import {AppComponent} from './app.component';
 import {LayoutModule} from "./layout/layout.module";
 import {MainNavModule} from "./layout/main-nav/main-nav.module";
 import {HttpClientModule} from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {HttpClientModule} from '@angular/common/http';
     AppRoutingModule,
     LayoutModule,
     MainNavModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
