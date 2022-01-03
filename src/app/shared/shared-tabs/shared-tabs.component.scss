@@ -1,0 +1,38 @@
+::ng-deep .nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+::ng-deep .nav-pills {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 0;
+  background: #efefef;
+}
+
+::ng-deep .nav-pills .nav-item {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+::ng-deep .nav-pills .nav-link.active, .nav-pills button.nav-link.active {
+  background: #848fae;
+  color: #fff;
+}
+
+::ng-deep .nav-pills .nav-link:hover, .nav-pills button.nav-link:hover {
+  background: #c1c7d7;
+  color: #fff;
+}
+
+::ng-deep .nav-pills .nav-link, .nav-pills button.nav-link {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4f5a78;
+}
