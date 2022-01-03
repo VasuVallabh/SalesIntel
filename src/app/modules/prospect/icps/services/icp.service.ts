@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import {Observable, throwError} from "rxjs";
 import { map, catchError } from 'rxjs/operators';
-import { IICPs } from '../../../../models/IICPs'
+import { IICPs } from '../../../../core/models/IICPs'
 
 @Injectable({
   providedIn: 'root'

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import {Observable, throwError} from "rxjs";
 import { map, catchError } from 'rxjs/operators';
-import { IBounceIntel } from "../../../models/IBounceIntel";
+import { IBounceIntel } from "../../../core/models/IBounceIntel";
 
 @Injectable({
   providedIn: 'root'

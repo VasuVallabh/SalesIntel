@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {IBounceIntel} from "../../../models/IBounceIntel";
+import {IBounceIntel} from "../../../core/models/IBounceIntel";
 import {BounceIntelService} from "../services/bounce-intel.service";
 import { faDownload, faTrash } from '@fortawesome/free-solid-svg-icons';
 import {ActivatedRoute, Router} from "@angular/router";

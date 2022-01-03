@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import {Observable, throwError} from "rxjs";
 import { map, catchError } from 'rxjs/operators';
-import { IInboxIntelContacts } from "../../../../models/IInboxIntelContacts";
+import { IInboxIntelContacts } from "../../../../core/models/IInboxIntelContacts";
 
 @Injectable({
   providedIn: 'root'

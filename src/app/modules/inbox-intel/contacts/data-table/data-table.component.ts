@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {IInboxIntelContacts} from "../../../../models/IInboxIntelContacts";
+import {IInboxIntelContacts} from "../../../../core/models/IInboxIntelContacts";
 import {ContactsService} from "../services/contacts.service"
 import { faEnvelope, faPhone, faCaretDown, faUserCheck, faDesktop } from '@fortawesome/free-solid-svg-icons';
 

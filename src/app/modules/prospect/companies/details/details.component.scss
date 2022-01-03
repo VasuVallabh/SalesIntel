@@ -46,6 +46,23 @@
   position: relative;
 }
 
+
+h4 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.step-number, .subdued {
+  color: #848fae;
+}
+
+.t-3 {
+  font-size: 14px;
+}
+
 a:hover {
   color: #0056b3;
   text-decoration: underline;
@@ -65,10 +82,45 @@ a {
   color: #647bed;
 }
 
-h4 {
-  font-size: 20px;
+.table td, .table th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
 }
 
-h2 {
-  font-size: 2rem;
+.numeric {
+  text-align: right;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table thead th {
+  border-top: none;
+  border-bottom: 3px solid #647bed;
+}
+
+input.form-control, input:not([type=checkbox],[type=radio],[type=file]), select, select.form-control {
+  height: 32px;
+  padding: 2px 8px;
+  border-color: #848fae;
+}
+
+.btn-link {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #647bed;
+}
+
+.btn.btn-icon.btn-sm, button.btn.btn-icon.btn-sm {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  font-size: 14px;
+  line-height: 14px;
+  vertical-align: initial;
 }

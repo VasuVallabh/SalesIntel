@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {faCaretDown} from '@fortawesome/free-solid-svg-icons';
 import {CompaniesService} from '../services/companies.service';
-import {ICompanies} from "../../../../models/ICompanies";
+import {ICompanies} from "../../../../core/models/ICompanies";
 import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({

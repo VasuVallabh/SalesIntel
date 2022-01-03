@@ -5,6 +5,7 @@ import { CompaniesRoutingModule } from './companies-routing.module';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { DataTableComponent } from './data-table/data-table.component';
 import { DetailsComponent } from './details/details.component';
+import { SharedModule } from '../../../shared/shared.module'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DetailsComponent } from './details/details.component';
   imports: [
     CommonModule,
     CompaniesRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    SharedModule
   ],
   exports: [
     CompaniesComponent

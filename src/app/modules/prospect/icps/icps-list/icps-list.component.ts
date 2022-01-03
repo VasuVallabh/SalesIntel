@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faCaretDown, faAddressCard, faTrash } from '@fortawesome/free-solid-svg-icons';
-import { IICPs } from "../../../../models/IICPs";
+import { IICPs } from "../../../../core/models/IICPs";
 import { IcpService } from "../services/icp.service"
 import {ActivatedRoute, Router} from "@angular/router";
 

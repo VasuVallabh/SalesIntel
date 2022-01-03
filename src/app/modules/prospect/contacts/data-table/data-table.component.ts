@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { ContactsService } from '../services/contacts.service';
-import { IContacts } from "../../../../models/IContacts";
+import { IContacts } from "../../../../core/models/IContacts";
 
 @Component({
   selector: 'app-data-table',
