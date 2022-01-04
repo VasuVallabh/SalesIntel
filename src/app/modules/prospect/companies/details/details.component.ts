@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faArrowLeft, faBellSlash, faUsers,
-        faPhone, faLink, faSearchPlus,
+        faPhone, faLink, faSearchPlus, faCaretRight,
         faFlag, faAngleDoubleDown, faStar, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
@@ -23,6 +23,7 @@ export class DetailsComponent implements OnInit {
   faAngleDoubleDown = faAngleDoubleDown;
   faStar = faStar;
   faQuestionCircle = faQuestionCircle;
+  faCaretRight = faCaretRight;
 
   constructor() { }
 

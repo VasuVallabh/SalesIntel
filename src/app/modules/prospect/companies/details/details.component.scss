@@ -124,3 +124,18 @@ input.form-control, input:not([type=checkbox],[type=radio],[type=file]), select,
   line-height: 14px;
   vertical-align: initial;
 }
+
+.btn-link {
+  font-weight: 400;
+  color: #007bff;
+  text-decoration: none;
+}
+.w-33 {
+  width: 33.333334%;
+}
+
+.table-header {
+  padding: .75rem;
+  border-bottom: 3px solid #647bed;
+  font-weight: 700;
+}

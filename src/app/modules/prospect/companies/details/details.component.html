@@ -662,7 +662,7 @@
           <div class="card-body">
             <div style="min-height: 20px;">
               <div>
-                <div class="d-flex align-items-center pb-3">
+                <div class="d-flex pb-3">
                   <app-shared-tabs>
                     <button routerlinkactive="active" class="nav-link" routerLink="companies" routerLinkActive="active">All</button>
                     <button routerlinkactive="active" class="nav-link active" routerLink="contacts" routerLinkActive="active">Key Technologies</button>
@@ -674,7 +674,7 @@
                   </div>
                   <div class="ps-2">
                     <button class="btn btn-outline-warning">
-                      <fa-icon [icon]="faSearchPlus" class="t-3 me-2"></fa-icon>  Report
+                      <fa-icon [icon]="faFlag" class="t-3 me-2"></fa-icon>  Report
                     </button>
                   </div>
                   <div class="ms-auto" style="width: 300px">
@@ -692,6 +692,41 @@
                   <div class="ms-auto text-end" style="min-width: 300px;">
                     <fa-icon [icon]="faStar" class="t-3 mr-2"></fa-icon>
                     = Key Technology, Provider or Product
+                    <button class="btn btn-icon btn-sm">
+                      <span>
+                        <fa-icon [icon]="faQuestionCircle" class="t-3 me-1"></fa-icon>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <div class="d-flex">
+                    <div class="w-33 table-header">Technology</div>
+                    <div class="w-33 table-header">Provider</div>
+                    <div class="w-33 table-header">Product</div>
+                  </div>
+                  <div>
+                    <div>
+                      <div class="d-flex">
+                        <div class="w-33 px-3 py-2 border-bottom">
+                          <button class="btn btn-icon btn-sm me-2">
+                            <fa-icon [icon]="faCaretRight" ></fa-icon>
+                          </button>
+                          <fa-icon [icon]="faStar" class="t-3 me-2"></fa-icon>
+                          Cloud Services
+                        </div>
+                        <div class="flex-grow-1">
+                          <div class="d-flex border-bottom">
+                            <div class="w-50 px-3 py-2">
+                              <span class="dropdown">
+                                <fa-icon [icon]="faStar" class="t-3 me-2"></fa-icon>
+
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
